@@ -29,24 +29,23 @@
     margin: 1.5em;
     border-radius: 2em;
     position: relative;
-    animation: move 2.5s alternate;
     background: #{$banner-box-background-color};
     .mobile-view & {
       @media screen and (max-width: 1100px) {
-        flex-flow: column;
+        animation: move 2.5s alternate;
         margin: 1.5em 0;
       }
     }
     
     @keyframes move  {
       0% {
-        left: 0;
+        top: 0;
       }
       50% {
-        left: -150px;
+        top: -150px;
       }
       100% {
-        left: 0;
+        top: 0;
       }
     }
 
@@ -134,6 +133,12 @@
       text-align: left;
       padding: 1.5em 0 1.5em 1.5em;
       margin: auto;
+      .mobile-view & {
+        @media screen and (max-width: 1100px) {
+          margin: auto auto auto 0;
+        }
+      }
+    }
 
       p {
         margin-bottom: 0;
