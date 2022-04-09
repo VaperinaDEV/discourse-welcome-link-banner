@@ -5,6 +5,7 @@
     background-size: #{$banner-background-size};
     background-repeat: #{$banner-background-repeat};
     background-position: center center;
+    background: linear-gradient(90deg, rgba(0,103,255,1) 0%, rgba(125,189,253,1) 50%) !important;
   }
 
   .welcome-link-banner {
@@ -14,7 +15,7 @@
       @media screen and (max-width: 1100px) {
         display: block;
         overflow-y: auto;
-        height: 170px;
+        max-height: 150px;
       }
     }
   }
@@ -25,7 +26,6 @@
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    box-shadow: shadow("card");
     margin: 1.5em;
     border-radius: 2em;
     position: relative;
@@ -33,7 +33,7 @@
     .mobile-view & {
       @media screen and (max-width: 1100px) {
         animation: move 2.5s alternate;
-        margin: 1.5em 0;
+        margin: 1.25em 0;
       }
     }
     
@@ -136,6 +136,7 @@
       .mobile-view & {
         @media screen and (max-width: 1100px) {
           margin: auto auto auto 0;
+          padding: 0.75em 0 0.75em 1.5em;
         }
       }
 
