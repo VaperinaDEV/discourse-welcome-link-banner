@@ -10,17 +10,8 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
-  }
-  
-  @keyframes move  {
-    0% {
-      left: 0;
-    }
-    50% {
-      left: -150px;
-    }
-    100% {
-      left: 0;
+    &::-webkit-scrollbar-thumb {
+      animation: move 2s;
     }
   }
 
@@ -34,11 +25,22 @@
     margin: 1.5em;
     border-radius: 2em;
     position: relative;
-    animation: move 2s;
     background: #{$banner-box-background-color};
     .mobile-view & {
       @media screen and (max-width: 1100px) {
         flex-flow: column;
+      }
+    }
+    
+    @keyframes move  {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 0;
       }
     }
 
