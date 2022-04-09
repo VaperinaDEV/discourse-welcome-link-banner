@@ -10,14 +10,18 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
+    animation: move infinite 8s alternate;
+    &:hover {
+      animation-play-state: paused;
+    }
   }
   
   @keyframes move  {
     0% {
-      margin-left: 1.5em;
+      margin-left: 20px;
     }
     100% {
-      margin-left: -10em;
+      margin-left: -400px;
     }
   }
 
@@ -31,10 +35,6 @@
     margin: 1.5em;
     border-radius: 2em;
     background: #{$banner-box-background-color};
-    animation: move infinite 8s alternate;
-    &:hover {
-      animation-play-state: paused;
-    }
     .mobile-view & {
       @media screen and (max-width: 1100px) {
         flex-flow: column;
@@ -129,6 +129,7 @@
         @media screen and (max-width: 1100px) {
           padding: 1em 1em 0 1em;
           text-align: center;
+          width: 200px;
         }
       }
 
