@@ -12,7 +12,7 @@
     overflow-x: auto;
     animation-duration: 8s;
     animation-direction: alternate-reverse;
-    transform: {translateX(-100%);}
+    transform: translateX(-100%);
     &:hover {
       animation-play-state: paused;
     }
