@@ -9,6 +9,7 @@
 
   .welcome-link-banner {
     display: flex;
+    overflow-x: auto;
   }
 
   .welcome-wrapper {
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: center;
     box-shadow: shadow("card");
-    margin: 2.5em auto;
+    margin: 2.5em;
     background: #{$banner-box-background-color};
 
     .featured-banner-link {
@@ -77,12 +78,13 @@
     h2 {
       font-size: 1.75em;
       line-height: 1.2;
+      white-space: nowrap;
     }
 
     .welcome-content {
       max-width: 375px;
       text-align: left;
-      padding: 2.5em 2em 3em;
+      padding: 1.5em;
 
       p {
         margin-bottom: 0;
@@ -103,7 +105,7 @@
       }
 
       .featured-banner-link {
-        padding: 0 0 2em;
+        padding: 1em;
         width: 100%;
       }
     }
@@ -118,7 +120,7 @@
 
       .featured-banner-link {
         flex-direction: column;
-        padding: 0.5em 0.5em 1.25em;
+        padding: 1em;
 
         > div {
           margin: 0 auto;
