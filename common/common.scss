@@ -10,19 +10,6 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
-    animation: move infinite 8s alternate;
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
-  
-  @keyframes move  {
-    0% {
-      margin-left: 1.5em;
-    }
-    100% {
-      margin-left: -400px;
-    }
   }
 
   .welcome-wrapper {
