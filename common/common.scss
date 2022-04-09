@@ -10,9 +10,6 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
-    &::-webkit-scrollbar-thumb {
-      animation: move 2s;
-    }
   }
 
   .welcome-wrapper {
@@ -25,6 +22,7 @@
     margin: 1.5em;
     border-radius: 2em;
     position: relative;
+    animation: move 2s;
     background: #{$banner-box-background-color};
     .mobile-view & {
       @media screen and (max-width: 1100px) {
@@ -37,7 +35,8 @@
         left: 0;
       }
       50% {
-        left: 100%;
+        right: 0;
+        left: auto;
       }
       100% {
         left: 0;
