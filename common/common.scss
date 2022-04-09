@@ -20,6 +20,7 @@
     justify-content: center;
     box-shadow: shadow("card");
     margin: 2.5em;
+    border-radius: 2em;
     background: #{$banner-box-background-color};
 
     .featured-banner-link {
