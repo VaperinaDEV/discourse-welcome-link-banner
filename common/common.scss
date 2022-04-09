@@ -92,42 +92,5 @@
         margin-bottom: 0;
       }
     }
-
-    @media screen and (max-width: 930px) {
-      flex-wrap: wrap;
-
-      p {
-        max-width: 500px;
-      }
-
-      .welcome-content {
-        max-width: unset;
-        text-align: center;
-        padding-bottom: 1em;
-      }
-
-      .featured-banner-link {
-        padding: 1em;
-        width: 100%;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      padding: 2em;
-    }
-
-    @media screen and (max-width: 550px) {
-      max-width: 80vw;
-      padding: 0;
-
-      .featured-banner-link {
-        flex-direction: column;
-        padding: 1em;
-
-        > div {
-          margin: 0 auto;
-        }
-      }
-    }
   }
 }
