@@ -22,11 +22,10 @@
     margin: 1.5em;
     border-radius: 2em;
     position: relative;
-    animation: move 2.5s alternate;
-    &:hover {
-      animation-play-state: paused;
-    }
     background: #{$banner-box-background-color};
+    &::-webkit-scrollbar {
+      animation: move 2.5s alternate;
+    }
     .mobile-view & {
       @media screen and (max-width: 1100px) {
         flex-flow: column;
