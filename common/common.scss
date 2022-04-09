@@ -32,20 +32,20 @@
     background: #{$banner-box-background-color};
     .mobile-view & {
       @media screen and (max-width: 1100px) {
-        animation: move 2.5s alternate;
+        animation: move 8s alternate;
         margin: 1.25em 0;
       }
     }
     
     @keyframes move  {
       0% {
-        top: 0;
+        top: 0%;
       }
       50% {
-        top: -150px;
+        top: -100%;
       }
       100% {
-        top: 0;
+        top: 0%;
       }
     }
 
