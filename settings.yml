@@ -9,10 +9,10 @@ show_on:
 
 banner_links:
   default: >-
-    [{"icon":"info-circle","text":"about this site","url":"/faq"},
-    {"icon":"users","text":"meet our staff","url":"/about"},
-    {"icon":"star","text":"your preferences","url":"/my/preferences"}]
-  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "icon": { "type": "string", "minLength": 1 }, "text": { "type": "string", "minLength": 1 }, "url": { "type": "string" } }, "additionalProperties": false } }'
+    [{"title":"Welcome","subtitle":"Hello sub...","icon":"info-circle","text":"about this site","url":"/faq"},
+    {"title":"Welcome here","subtitle":"Hello nothing sub...","icon":"users","text":"meet our staff","url":"/about"},
+    {"title":"Welcome 3","subtitle":"Hello sub333...","icon":"star","text":"your preferences","url":"/my/preferences"}]
+  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "title": { "type": "string", "minLength": 1 }, "subtitle": { "type": "string", "minLength": 1 }, "icon": { "type": "string", "minLength": 1 }, "text": { "type": "string", "minLength": 1 }, "url": { "type": "string" } }, "additionalProperties": false } }'
 
 max_trust_level:
   type: integer
