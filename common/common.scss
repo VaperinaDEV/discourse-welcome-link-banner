@@ -18,10 +18,10 @@
   
   @-webkit-keyframes move  {
     0% {
-      margin-left: 1.5em;
+      transform: translateX(0);
     }
     100% {
-      margin-left: -5em;
+      transform: translateX(-100);
     }
   }
 
