@@ -10,7 +10,6 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
-    animation: move 2s;
   }
   
   @keyframes move  {
@@ -31,6 +30,8 @@
     box-shadow: shadow("card");
     margin: 1.5em;
     border-radius: 2em;
+    position: relative;
+    animation: move 2s;
     background: #{$banner-box-background-color};
     .mobile-view & {
       @media screen and (max-width: 1100px) {
