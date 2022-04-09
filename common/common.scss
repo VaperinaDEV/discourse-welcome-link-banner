@@ -10,15 +10,18 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
-    animation: move 1s alternate;
+    animation: move 2s;
   }
   
   @keyframes move  {
     0% {
-      margin-left: 0;
+      left: 0;
     }
     100% {
-      margin-left: -150px;
+      left: -150px;
+    }
+    0% {
+      left: 0;
     }
   }
 
