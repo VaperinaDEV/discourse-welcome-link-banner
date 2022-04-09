@@ -32,15 +32,13 @@
     
     @keyframes move  {
       0% {
-        right: auto;
         left: 0;
       }
       50% {
-        right: 0;
+        right: 100%;
         left: auto;
       }
       100% {
-        right: auto;
         left: 0;
       }
     }
