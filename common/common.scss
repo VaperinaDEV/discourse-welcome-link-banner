@@ -10,7 +10,7 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
-    animation: move infinite 3s alternate;
+    animation: move infinite 8s alternate;
     &:hover {
       animation-play-state: paused;
     }
@@ -21,7 +21,7 @@
       margin-left: 0;
     }
     100% {
-      margin-left: -100%;
+      margin-left: max-content;
     }
   }
 
