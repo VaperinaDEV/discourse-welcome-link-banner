@@ -15,23 +15,10 @@
 
   @-webkit-keyframes move  {
     0% {
-      left: 0;
-      -webkit-transform: rotateY(0deg);
-    }
-    50% {
-      left: 82%;
-      -webkit-transform: rotateY(0deg);
-    }
-    51% {
-      -webkit-transform: rotateY(180deg);
-    }
-    99% {
-      left: 0;
-      -webkit-transform: rotateY(180deg);
+      -webkit-transform: translateX(0%);
     }
     100% {
-      left: 0;
-      -webkit-transform: rotateY(0deg);
+      -webkit-transform: translateX(-100%);
     }
   }
 
