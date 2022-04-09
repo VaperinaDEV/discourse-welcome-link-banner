@@ -10,6 +10,13 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
+    .mobile-view & {
+      @media screen and (max-width: 1100px) {
+        display: block;
+        overflow-y: auto;
+        height: 170px;
+      }
+    }
   }
 
   .welcome-wrapper {
@@ -22,15 +29,13 @@
     margin: 1.5em;
     border-radius: 2em;
     position: relative;
+    animation: move 2.5s alternate;
     background: #{$banner-box-background-color};
     .mobile-view & {
       @media screen and (max-width: 1100px) {
         flex-flow: column;
+        margin: 1.5em 0;
       }
-    }
-    
-    .welcome-wrapper::-webkit-scrollbar {
-      animation: move 2.5s alternate;
     }
     
     @keyframes move  {
@@ -129,16 +134,10 @@
       text-align: left;
       padding: 1.5em 0 1.5em 1.5em;
       margin: auto;
-      .mobile-view & {
-        @media screen and (max-width: 1100px) {
-          padding: 1em 1em 0 1em;
-          text-align: center;
-          width: 200px;
-        }
-      }
 
       p {
         margin-bottom: 0;
+        margin-top: 0;
       }
     }
   }
