@@ -11,10 +11,32 @@
     display: flex;
     overflow-x: auto;
     animation-duration: 8s;
+    animation:linear infinite;
+    animation-name: move;
     animation-direction: alternate-reverse;
-    transform: translateX(-100%);
     &:hover {
       animation-play-state: paused;
+    }
+    @keyframes move  {
+      0% {
+        left:0;
+        -webkit-transform:rotateY(0deg);
+      }
+      50% {
+        left:82%;
+        -webkit-transform:rotateY(0deg);
+      }
+      51% {
+        -webkit-transform:rotateY(180deg);
+      }
+      99% {
+        left:0;
+        -webkit-transform:rotateY(180deg);
+      }
+      100% {
+        left:0;
+        -webkit-transform:rotateY(0deg);
+      }
     }
   }
 
