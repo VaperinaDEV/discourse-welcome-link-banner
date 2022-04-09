@@ -22,7 +22,7 @@
     margin: 1.5em;
     border-radius: 2em;
     position: relative;
-    animation: move infinite 8s alternate;
+    animation: move 2.5s alternate;
     &:hover {
       animation-play-state: paused;
     }
@@ -38,7 +38,7 @@
         left: 0;
       }
       50% {
-        left: -100%;
+        left: -150px;
       }
       100% {
         left: 0;
