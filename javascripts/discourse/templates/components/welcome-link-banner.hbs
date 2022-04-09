@@ -3,8 +3,8 @@
   {{#unless (and (theme-setting 'hide_on_mobile') site.mobileView)}}
     {{#if (and showTrust showHere)}}
       <div class="welcome-link-banner-wrapper">
-        {{#each bannerLinks as |bl|}}
-          <div class="wrap welcome-link-banner">
+        <div class="wrap welcome-link-banner">
+          {{#each bannerLinks as |bl|}}
             <div class="welcome-wrapper">
               <div class="welcome-content">
                 <h2>{{html-safe bl.title}}</h2>
@@ -21,8 +21,8 @@
                 </div>
               </div>
             </div>
-          </div>
-        {{/each}}
+          {{/each}}
+        </div>
       </div>
     {{/if}}
   {{/unless}}
