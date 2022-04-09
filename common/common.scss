@@ -10,20 +10,18 @@
   .welcome-link-banner {
     display: flex;
     overflow-x: auto;
-     -webkit-animation-duration: 8s;
-    -webkit-animation: linear infinite;
-    -webkit-animation-name: move;
+    animation: move infinite 3s alternate;
     &:hover {
-      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
     }
   }
   
   @-webkit-keyframes move  {
     0% {
-      -webkit-transform: translateX(0%);
+      margin-left: 0;
     }
     100% {
-      -webkit-transform: translateX(-100%);
+      margin-left: -100%;
     }
   }
 
