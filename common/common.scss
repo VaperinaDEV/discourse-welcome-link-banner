@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     margin: 1.5em;
-    border-radius: 2em;
+    border-radius: Max(0px, Min(2em, calc((100vw - 100%) * 9999))) / 2em;;
     position: relative;
     background: #{$banner-box-background-color};
     .mobile-view & {
